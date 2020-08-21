@@ -16,12 +16,11 @@
     <header></header>
     <section id="startScreen">
       <h1>North London Derby Quiz</h1>
-      <h1>Start Screen</h1>
       <img src="images/arsenal-fc.jpeg" alt="Arsenal" width="150" />
       <img src="images/tottenham-fc.jpg" alt="Tottenham" width="" />
       <div>
         <p>
-          Welcome to the rivalry that is Arsenal FC vs Tottenham FC!! Test your
+          Welcome to the rivalry that is Aresnal FC vs Tottenham FC!! Test your
           knowledge of the oldest derby in the World!!!
         </p>
       </div>
@@ -29,24 +28,31 @@
         <button id="start-quiz">Start Quiz</button>
       </div>
     </section>
-
-
-    <section id="questions">
-      <h2>Quiz Questions</h2>
-      <div class="questionBox">
-        <div class="question">What is the North London Derby?</div>
-        <form class="form">
-          <input type="radio" id="true" name="answers" value="answer">
-          <label for="true">Answer 1</label><br>
-          <input type="radio" id="false" name="answers" value="answer">
-          <label for="false">Answer 2</label><br>
-          <input type="radio" id="true" name="answers" value="answer">
-          <label for="true">Answer 3</label><br>
-          <input type="radio" id="false" name="answers" value="answer">
-          <label for="false">Answer 4</label><br>
-          <button type="submit" id="submit">Submit</button>
-        </form>    
-      </div>
+  
+    <section id="ScoreAndProgress">
+      <h1></h1>
+      <p class="score">Score:</p>
+      <p class="progress">0/0</p>
+    </section>
+    <section id="quiz">
+      <h2></h2>
+      <form>
+        <fieldset id="choices"></fieldset>
+        <input type="submit" value="Submit Answer" aria-label="Submit Answer" />
+      </form>
+    </section>
+  
+    <section id="feedback">
+      <h2></h2>
+      <p class="user-answer"></p>
+      <p class="correct-answer"></p>
+      <button id="next">Next Question</button>
+    </section>
+  
+    <section id="summary">
+      <h2>Summary</h2>
+      <p></p>
+      <button id="restart">Restart Quiz</button>
     </section>
 
     <script
